@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/farhad', function () {
+    $nom = "<h2>khibaziev</h2>";
+    return view('nom');
 });
+
