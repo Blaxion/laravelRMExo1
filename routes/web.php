@@ -18,3 +18,8 @@ Route::get('/farhad', function () {
     return view('nom');
 });
 
+Route::get('/welcome/{chiffre}', function ($chiffre) {
+    
+    return view('welcome' , compact('chiffre'));
+}); 
+

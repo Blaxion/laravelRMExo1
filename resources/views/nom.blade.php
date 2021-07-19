@@ -7,11 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <div>   
-        @if (is_numeric($chiffre) == true)
-        {{$chiffre}}*2={{$chiffre*2}}
-        @endif
-    </div>
     
 </body>
 </html>
