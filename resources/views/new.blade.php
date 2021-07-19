@@ -8,8 +8,9 @@
 </head>
 <body>
     <div>   
-        @if (is_numeric($chiffre) == true)
-        {{$chiffre}}*2={{$chiffre*2}} 
+        @if (is_numeric($chiffre1) == true AND  is_numeric($chiffre2) == true)
+        <p>{{$chiffre1 + $chiffre2}}</p>
+        <p>{{$chiffre1 - $chiffre2}}</p>
         @else
         t'as cru quoi
         @endif

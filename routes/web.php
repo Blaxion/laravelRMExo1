@@ -23,3 +23,9 @@ Route::get('/welcome/{chiffre}', function ($chiffre) {
     return view('welcome' , compact('chiffre'));
 }); 
 
+Route::get('/welcome/{chiffre1}/{chiffre2}', function ($chiffre1 ,$chiffre2) {
+    
+    return view('new' , compact('chiffre1',"chiffre2"));
+}); 
+
+
