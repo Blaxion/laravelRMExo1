@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/farhad', function () {
     $nom = "<h2>khibaziev</h2>";
-    return view('nom');
+    return view('pages.nom');
 });
 
 Route::get('/welcome/{chiffre}', function ($chiffre) {
@@ -25,7 +25,11 @@ Route::get('/welcome/{chiffre}', function ($chiffre) {
 
 Route::get('/welcome/{chiffre1}/{chiffre2}', function ($chiffre1 ,$chiffre2) {
     
-    return view('new' , compact('chiffre1',"chiffre2"));
+    return view('pages.new' , compact('chiffre1',"chiffre2"));
 }); 
 
+Route::get('/couleur/{couleur}', function ($couleur) {
+    
+    return view('pages.couleur' , compact('couleur'));
+}); 
 
